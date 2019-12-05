@@ -1,0 +1,2 @@
+DEFAULT_FILE atom pwm@modulator_tb/struct.bd
+DEFAULT_ARCHITECTURE atom struct

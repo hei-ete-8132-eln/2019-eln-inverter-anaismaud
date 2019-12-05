@@ -1,0 +1,114 @@
+version "1.1"
+HDSFlow (HDSFlow
+TaskName "Xilinx Project Navigator"
+bitmap "/usr/opt/HDS/resources/bitmaps/tools/tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Xilinx Flow"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"flowSettingsDlg"
+""
+"taskInvocationScript"
+""
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 1
+enabled 1
+hierDepth 1
+subTasks [
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Update Project"
+bitmap "tool_default_tool.bmp"
+hasBitmap 1
+tooltip "Update file references in the Xilinx project .xise file"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+"$SYNTHESIS_BASE_DIR/../../Scripts/update_ise.pl $DESIGN_NAME.xise $CONCAT_DIR/$DESIGN_NAME.vhd $CONCAT_DIR/$DESIGN_NAME.ucf"
+"captureOutput"
+"1"
+"customPrompt"
+""
+"initialDir"
+"$SYNTHESIS_WORK_DIR"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"/usr/bin/perl"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+(HDSTool
+hasAssociatedFileExt 0
+associatedFileExt ""
+TaskName "Xilinx Project Navigator"
+bitmap "$HDS_HOME/resources/bitmaps/tools/tool_xilinx_synthesis.bmp"
+hasBitmap 1
+tooltip "Invokes Xilinx ISE Synthesis Tool"
+taskSettings [
+"InternalTaskSetting"
+(SettingsMap
+settingsMap [
+"additionalToolArgs"
+""
+"captureOutput"
+"0"
+"customPrompt"
+""
+"initialDir"
+"$SYNTHESIS_WORK_DIR"
+"promptForRunSettings"
+"0"
+"runMethod"
+"gui"
+"runnableObject"
+"$SYNTHESIS_HOME/bin/lin64/ise"
+"runnableObjectType"
+"executable"
+"useViewSpecific"
+"0"
+]
+)
+"TaskSetting"
+(SettingsMap
+settingsMap [
+"exePath"
+"/usr/opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64"
+]
+)
+]
+PreferedTasks [
+]
+onShortcutBar 0
+onPulldownMenu 0
+onToolbar 0
+enabled 1
+hierDepth 3
+)
+]
+)

@@ -1,0 +1,54 @@
+#-------------------------------------------------------------------------------
+# Clock and reset
+#
+
+NET     "clock"         LOC = "A10";
+NET     "reset_n"       LOC = "A15"     | PULLUP;
+#NET     "testMode"      LOC = "T10";
+
+
+#-------------------------------------------------------------------------------
+# Buttons
+#
+
+#NET     "buttons_n<1>"  LOC = "F7" ;
+NET     "buttons_n<2>"  LOC = "F9" ;
+NET     "buttons_n<3>"  LOC = "G9" ;
+NET     "buttons_n<4>"  LOC = "E8" ;
+
+
+#-------------------------------------------------------------------------------
+# PWM
+#
+
+NET     "pwm1High"      LOC = "J14";
+NET     "pwm1Low_n"     LOC = "J16";
+NET     "pwm2High"      LOC = "K14";
+NET     "pwm2Low_n"     LOC = "K12";
+NET     "trigger"       LOC = "J13";
+
+NET     "lp_pwm1"       LOC = "G4" ;
+NET     "lp_pwm2"       LOC = "G5" ;
+NET     "lp_trigger"    LOC = "D2" ;
+
+
+#-------------------------------------------------------------------------------
+# LEDs
+#
+
+NET     "LED1"          LOC = "B16";
+NET     "LED2"          LOC = "A16";
+NET     "LEDs_n<1>"     LOC = "E7" ;
+NET     "LEDs_n<2>"     LOC = "B14";
+NET     "LEDs_n<3>"     LOC = "B13";
+NET     "LEDs_n<4>"     LOC = "B11";
+NET     "LEDs_n<5>"     LOC = "A8" ;
+NET     "LEDs_n<6>"     LOC = "C7" ;
+NET     "LEDs_n<7>"     LOC = "A14";
+NET     "LEDs_n<8>"     LOC = "A11";
+
+
+#-------------------------------------------------------------------------------
+# Globals
+#
+NET "*" IOSTANDARD = LVCMOS33;

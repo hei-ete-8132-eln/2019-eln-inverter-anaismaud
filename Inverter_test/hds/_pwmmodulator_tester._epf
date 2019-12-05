@@ -1,0 +1,2 @@
+DEFAULT_ARCHITECTURE atom tesrt
+DEFAULT_FILE atom pwmModulator_tester_tesrt.vhd

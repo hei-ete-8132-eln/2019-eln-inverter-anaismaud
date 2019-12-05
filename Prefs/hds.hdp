@@ -1,0 +1,38 @@
+[Concat]
+Board = $HDS_PROJECT_DIR/../Board/concat
+[ModelSim]
+Board = $SCRATCH_DIR/$DESIGN_NAME/Board/work
+Inverter = $SCRATCH_DIR/$DESIGN_NAME/Inverter/work
+Inverter_test = $SCRATCH_DIR/$DESIGN_NAME/Inverter_test\work
+Common = $SCRATCH_DIR/Libraries/Common/work
+gates = $SCRATCH_DIR/Libraries/gates/work
+io = $SCRATCH_DIR/Libraries/IO/work
+sequential = $SCRATCH_DIR/Libraries/sequential/work
+[hdl]
+Board = $HDS_PROJECT_DIR/../Board/hdl
+Inverter = $HDS_PROJECT_DIR/../Inverter/hdl
+Inverter_test = $HDS_PROJECT_DIR/../Inverter_test/hdl
+Common = $HEI_LIBS_DIR/Common/hdl
+gates = $HEI_LIBS_DIR/Gates/hdl
+ieee = $HDS_HOME/hdl_libs/ieee/hdl
+io = $HEI_LIBS_DIR/IO/hdl
+sequential = $HEI_LIBS_DIR/Sequential/hdl
+std = $HDS_HOME/hdl_libs/std/hdl
+[hds]
+Board = $HDS_PROJECT_DIR/../Board/hds
+Inverter = $HDS_PROJECT_DIR/../Inverter/hds
+Inverter_test = $HDS_PROJECT_DIR/../Inverter_test/hds
+Common = $HEI_LIBS_DIR/Common/hds
+gates = $HEI_LIBS_DIR/Gates/hds
+ieee = $HDS_HOME/hdl_libs/ieee/hds
+io = $HEI_LIBS_DIR/IO/hds
+sequential = $HEI_LIBS_DIR/Sequential/hds
+std = $HDS_HOME/hdl_libs/std/hds
+[hds_settings]
+design_root = Inverter_test.motorControl_tb(struct)motor@control_tb/struct.bd
+[library_type]
+Board = regular
+ieee = standard
+std = standard
+[shared]
+others = $HDS_TEAM_HOME/shared.hdp
